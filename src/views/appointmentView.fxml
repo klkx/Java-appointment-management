@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="769.0" prefWidth="1681.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Appointment_controller">
+   <children>
+      <Button mnemonicParsing="false" onAction="#switchScene_toHomeScene" prefHeight="39.0" prefWidth="76.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="appt_table" layoutY="82.0" prefHeight="684.0" prefWidth="1675.0" />
+      <Button fx:id="apptEdit_button" layoutX="201.0" mnemonicParsing="false" onAction="#switchScene_toApptAddEdit" prefHeight="39.0" prefWidth="76.0" text="Edit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="apptAdd_button" layoutX="108.0" mnemonicParsing="false" onAction="#switchScene_toApptAddEdit" prefHeight="39.0" prefWidth="76.0" text="Add">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="apptDelete_button" layoutX="301.0" mnemonicParsing="false" onAction="#toDeleteAppointment" prefHeight="39.0" prefWidth="76.0" text="Delete">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="vbw_button" layoutX="516.0" mnemonicParsing="false" onAction="#switchScene_toAppointmentScene_viewCurrentWeekAppts" prefHeight="39.0" prefWidth="145.0" text="View current week">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="vbw_button2" layoutX="677.0" mnemonicParsing="false" onAction="#switchScene_toAppointmentScene_viewCurrentMonthAppts" prefHeight="39.0" prefWidth="151.0" text="View current month">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="vbw_button1" layoutX="420.0" mnemonicParsing="false" onAction="#switchScene_toAppointmentScene_viewAllAppts" prefHeight="39.0" prefWidth="84.0" text="View all">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="848.0" layoutY="19.0" orientation="VERTICAL" prefHeight="58.0" prefWidth="5.0" />
+      <ComboBox fx:id="report_month_combox" layoutX="903.0" layoutY="15.0" prefHeight="25.0" prefWidth="84.0" promptText="Month" />
+      <ComboBox fx:id="report_type_combox" layoutX="1023.0" layoutY="15.0" prefHeight="25.0" prefWidth="127.0" promptText="Type" />
+      <Button fx:id="month_type_report_button" layoutX="860.0" layoutY="48.0" mnemonicParsing="false" onAction="#showReport_byTypeMonth" prefHeight="31.0" prefWidth="305.0" text="Generate report of #appointments by type and month" />
+      <Separator layoutX="1176.0" layoutY="19.0" orientation="VERTICAL" prefHeight="58.0" prefWidth="5.0" />
+      <ComboBox fx:id="contact_combox" layoutX="1204.0" layoutY="15.0" prefHeight="25.0" prefWidth="127.0" promptText="Contact" />
+      <Button fx:id="contact_report_button" layoutX="1366.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchScene_toAppointmentScene_viewByContact" prefHeight="31.0" prefWidth="264.0" text="Generate report of  appointments by contact" />
+      <ComboBox fx:id="customer_combox" layoutX="1204.0" layoutY="51.0" prefHeight="25.0" prefWidth="127.0" promptText="Customer" />
+      <Button fx:id="customer_report_button" layoutX="1366.0" layoutY="48.0" mnemonicParsing="false" onAction="#switchScene_toAppointmentScene_viewByCustomer" prefHeight="31.0" prefWidth="264.0" text="Generate report of  appointments by customer" />
+   </children>
+</AnchorPane>

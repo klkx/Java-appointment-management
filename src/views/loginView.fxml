@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Login_controller">
+   <children>
+      <Button fx:id="login_button" layoutX="243.0" layoutY="257.0" mnemonicParsing="false" onAction="#switchScene_login" text="Login">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <TextField fx:id="input_pass" layoutX="243.0" layoutY="200.0" promptText="test" text="test" />
+      <TextField fx:id="input_usrnme" layoutX="243.0" layoutY="128.0" promptText="test" text="test" />
+      <Label fx:id="loginUsr_label" layoutX="50.0" layoutY="134.0" prefHeight="25.0" prefWidth="168.0" text="User:" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginPass_label" layoutX="50.0" layoutY="200.0" prefHeight="25.0" prefWidth="168.0" text="Pass:" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="timezoneDes_label" layoutX="113.0" layoutY="394.0" prefHeight="25.0" prefWidth="149.0" text="Time Zone:" textAlignment="RIGHT">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_timezone" layoutX="272.0" layoutY="394.0" text="...">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
